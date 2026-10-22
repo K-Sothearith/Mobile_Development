@@ -3,5 +3,4 @@ class Student {
   final String name;
 
   Student({required this.id, required this.name});
-
 }
