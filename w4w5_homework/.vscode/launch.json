@@ -1,0 +1,10 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    { "name": "Exercise 1", "request": "launch", "type": "dart", "program": "lib/ex_1/main.dart" },
+    { "name": "Exercise 2", "request": "launch", "type": "dart", "program": "lib/ex_2/main.dart" },
+    { "name": "Exercise 3", "request": "launch", "type": "dart", "program": "lib/ex_3/main.dart" },
+    { "name": "Exercise 4", "request": "launch", "type": "dart", "program": "lib/ex_4/main.dart" },
+    { "name": "Exercise 5", "request": "launch", "type": "dart", "program": "lib/ex_5/main.dart" }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "w4_homework",
+    "short_name": "w4_homework",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#0175C2",
+    "theme_color": "#0175C2",
+    "description": "Week 4 and 5 practice with basic Flutter widgets.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false
+}
