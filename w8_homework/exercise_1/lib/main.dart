@@ -1,6 +1,20 @@
 import 'package:flutter/material.dart';
 
-List<String> colors = ["red", "blue", "green"];
+List<String> colors = ['red', 'blue', 'green'];
+
+Map<String, Color> textColors = {
+  'red': Colors.red,
+  'blue': Colors.blue,
+  'green': Colors.green,
+};
+
+Widget colorText(String name) {
+  return Text(name, style: TextStyle(color: textColors[name]));
+}
+
+List<Widget> getColors() {
+  return colors.map((color) => colorText(color)).toList();
+}
 
 void main() {
   runApp(
@@ -11,12 +25,15 @@ void main() {
           padding: const EdgeInsets.all(10),
           child: ListView(
             children: [
-              Label("Method 1: Loop in Array", bold: true),
+              const Label('Method 1: Loop in Array', bold: true),
               // TODO
-              Label("Method 2: Map", bold: true),
+              for (var color in colors) colorText(color),
+              Label('Method 2: Map', bold: true),
               // TODO
-              Label("Method 23: Dedicated Function", bold: true),
+              ...colors.map(colorText),
+              const Label('Method 3: Dedicated Function', bold: true),
               // TODO
+              ...getColors(),
             ],
           ),
         ),
